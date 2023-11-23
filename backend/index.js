@@ -17,6 +17,10 @@ const corsOptions = {
    credentials: true
 }
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 mongoose.set("strictQuery", false)
 const connect = async() => {
    try {
